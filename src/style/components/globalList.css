@@ -1,0 +1,206 @@
+
+.Global_Lists {
+    padding: 0;
+}
+nav.navbar.top_navbar {
+    z-index: 9999;
+}
+.navbar-brand {
+    color: #212529 !important;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.navbar-text {
+    color: #343a40 !important;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+}
+.content_nav {
+    padding: 0;
+}
+.content_nav .container-fluid {
+    padding: 0;
+    flex-direction: column;
+}
+.page_title {
+    color: #37373c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 12px;
+    width: 100%;
+    padding-bottom: 80px;
+}
+.box_title {
+    color: #37373c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.box_button {
+    text-align: right;
+    padding-top: 10px;
+}
+.box_button button {
+    color: #ffffff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+    border-radius: 4px;
+    background: #007bff;
+    padding: 9px 35px;
+}
+.box_form .input-group {
+    margin-bottom: 10px;
+}
+.box_form {
+    padding: 17px 25px 0 10px; 
+}
+.scrolleffect {
+    height: 300px;
+    overflow-y: scroll;
+}
+.input-group-text svg {
+    width: 12px;
+    color: #fff;
+}
+.box_form_save {
+    background: #39dbdb;
+    cursor: pointer;
+}
+.box_form_success{
+    background: green;
+    cursor: auto;
+}
+.input-group .disabled {
+    cursor: auto;
+}
+.box_form_remove {
+    background: #e96262;
+    cursor: pointer;
+}
+.col_left {
+    padding-right: 105px;
+    padding-top: 65px;
+}
+.col_right {
+    padding-left: 105px;
+    padding-top: 65px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #d8d8d8;
+    color: #fff;
+    transition: all 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    margin-left: -150px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.content {
+    width: calc(100% - 150px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 60px;
+}
+
+.content.active {
+    width: 100%;
+}
+.modal-header{
+    border : none;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 1160px) {
+.col_left {
+    padding-right: 15px;
+    padding-top: 50px;
+}
+.col_right {
+    padding-left: 15px;
+    padding-top: 50px;
+}
+.page_title {
+    padding-bottom: 20px;
+}
+}
+
+@media (max-width: 900px) {
+.box_form {
+    padding: 17px 0px 0 0px;
+}
+#content {
+    padding: 50px 10px;
+}
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -150px;
+    }
+    .sidebar.active {
+        margin-left: 0;
+    }
+    .content {
+        width: 100%;
+    }
+    .content.active {
+        width: calc(100% - 150px);
+    }
+    /* #sidebarCollapse span {
+        display: none;
+    } */
+}
+
+ul.list-unstyled.components li {
+    text-align: right;
+    padding: 10px 20px;
+}
+ul.list-unstyled.components li a {
+    color: #37373c;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+button.sidebarCollapse {
+    margin-right: 15px;
+}
